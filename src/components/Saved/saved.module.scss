@@ -1,0 +1,135 @@
+.savedCenter{
+    max-width: 1000px;
+    margin: 0 auto;
+    --margin: 18px;
+}
+
+.filterOptions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 690px) {
+    .filterOptions{
+        flex-direction: row;
+    }
+}
+
+.filterOptionsItem{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-bottom: var(--margin);
+}
+
+.filterOptionLabel{
+    margin-right: 10px;
+    color: var(--textColourSecondary);
+}
+
+.filterDropdown{
+    width: 50%;
+    min-width: 200px;
+}
+
+.line {
+    height: 1.8px;
+    width: 100%;
+    background-color: var(--lineColour);
+    margin-bottom: var(--margin);
+}
+
+.videoRecordList{
+    list-style-type: none;
+    margin-bottom: var(--margin);
+}
+
+.videoRecordRowLi{
+    padding: 8px;
+    cursor: pointer;
+    border-radius: var(--radiusPrimary);
+}
+
+.videoRecordRowLi:hover{
+    background-color: var(--rowHoverColour);
+}
+
+.videoRecordRow{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.videoRecordData{
+    display: flex;
+    width: 100%;
+}
+
+.videoRecordCategory{
+    padding-right: 5px;
+    width: calc(100% / 3);
+}
+
+.videoRecordTimeAndDate{
+    width: calc(100% * 2 / 3);
+    display: flex;
+    flex-direction: row;
+}
+
+.videoRecordTime{
+    flex: 1;
+}
+
+.videoRecordDate{
+    flex: 1;
+}
+
+.paginationContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination{
+    list-style: none;
+    display: inline-block;  
+    color: var(--textColourSecondary);  
+}
+
+
+.pagination > li{
+    display: inline-block;
+    cursor: pointer;
+    border-radius: var(--radiusPrimary);
+}
+
+.pagination > li > a{
+    border-radius: var(--radiusPrimary);
+    padding: 5px;
+    outline: none;
+}
+
+.pagination > li > a:hover{
+    background-color: var(--rowHoverColour);
+}
+
+.active{
+    background-color: var(--btnColour);
+    padding: 5px 0;
+}
+
+.binBtn{
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.binBtn:hover .binIcon{
+    color: #fff;
+}
+
+.binIcon{
+    color: var(--textColourSecondary);
+}

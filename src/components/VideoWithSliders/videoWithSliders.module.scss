@@ -1,0 +1,71 @@
+.videoWithSlider{
+    display: inline-block;
+    border-radius: 6.5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.videoContainer{
+    position: relative;
+    width: 100%;
+}
+
+.video {
+    display: block;
+    width: 100%;
+}
+
+.timeDisplay{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    background-color: var(--textColourSecondary);
+    z-index: 2;
+    background-image: linear-gradient(var(--textColourSecondary), #807b85);
+    border-radius: var(--radiusPrimary);
+    padding: 2px 7px;
+    font-size: 1.2rem;
+}
+
+.sliderContainer{
+    position: relative;
+    height: calc(600px * 0.04);
+    width: 100%;
+    background-image: linear-gradient(#e6dff2, #c6c0cf);
+}
+
+.touchDetector{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+}
+
+.vidPosLineRef{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid #515151;
+}
+
+.rectangle {
+    background-image: linear-gradient(to bottom right, #a59db0, #8f8899);
+    height: 100%; 
+    cursor: pointer;
+}

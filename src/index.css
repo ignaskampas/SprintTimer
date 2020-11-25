@@ -1,0 +1,15 @@
+:root{
+    --rowHoverColour: #3a3445;
+    --lineColour: var(--rowHoverColour);
+    --btnColour: #615970;
+    --textColour: #f2f2f2;
+    --textColourSecondary: #a59eb0;
+    --dropdownSelectedItemColour: #7b718f;
+    --backgroundColour: #1d1d2e;
+    --headerFooterColour: #17141c;
+    --radiusPrimary: 5px;
+    --btnHoverColour: #736a85;
+    --btnHoverColour: var(--rowHoverColour);
+    --pageMaxWidth: 1000px;
+    --btnPadding: 3px 6px;
+}
