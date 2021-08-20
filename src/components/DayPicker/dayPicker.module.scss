@@ -1,0 +1,124 @@
+.dayPicker{
+    --disabledColour: #a29cad;
+    display: inline-block;
+    position: relative;
+}
+
+.input{
+    display: inline;
+    background-color: var(--btnColour);
+    color: var(--textColour);
+    font-size: 1rem;
+    border-radius: var(--radiusPrimary);
+    cursor: pointer;
+    padding: var(--btnPadding);;
+    border: none;
+}
+
+.input:hover{
+    background-color: var(--rowHoverColour);
+}
+
+.calendar{
+    display: inline-block;
+    background-color: var(--btnColour);
+    border-radius: var(--radiusPrimary);
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    font-size: 1rem;
+    --cellPadding: 7px;
+    color: #e6e6e6;
+    position: absolute;
+    z-index: 3;
+}
+
+.calendarIsClosed{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.monthName{
+    flex: 1;
+    padding-left: var(--cellPadding);
+    font-size: 1.2rem;
+    color: #e0daeb;
+}
+
+.changeMonthBtns{
+    padding-right: var(--cellPadding);
+    --arrowSize: 8px;
+    --arrowColour: #afa9ba;
+}
+
+.arrow{
+    border-top: var(--arrowSize) solid transparent;
+    border-bottom: var(--arrowSize) solid transparent; 
+    width: 0; 
+    height: 0; 
+    display: inline-block;
+    margin-left: 11.6px;
+    cursor: pointer;
+}
+
+.arrowLeft{
+    border-right: var(--arrowSize) solid var(--arrowColour); 
+}
+
+.arrowLeft:hover{
+    border-right: var(--arrowSize) solid var(--rowHoverColour); 
+}
+
+.arrowRight{
+    border-left: var(--arrowSize) solid var(--arrowColour);
+}
+
+.arrowRight:hover{
+    border-left: var(--arrowSize) solid var(--rowHoverColour);
+}
+
+// weekdays:
+.calendar th{
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: #918c9c;
+}
+
+.monthDays{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.tCell{
+    text-align: center;
+    cursor: pointer;
+}
+
+.dayIsDisabled{
+    color: var(--disabledColour);
+    cursor: default;
+    padding: var(--cellPadding);
+}
+
+.dayIsEnabled{
+    padding: var(--cellPadding);
+    border-radius: 50%;
+}
+
+.dayIsEnabled:hover{
+    background-color: var(--rowHoverColour);
+}
+
+.dayIsSelected{
+    background-color: var(--dropdownSelectedItemColour);
+    border-radius: 50%;
+}
+
+.todayDay{
+    color: white;
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+.app {
+    background-color: var(--backgroundColour);
+    color: var(--textColour);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;   
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.routerResult{
+    width: 100%;
+    padding: 18px; 
+    flex: 1
+}

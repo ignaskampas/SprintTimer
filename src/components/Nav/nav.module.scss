@@ -1,0 +1,108 @@
+.nav {
+    --navBckgColor: var(--headerFooterColour);
+    background-color: var(--navBckgColor);
+    font-family: 'Poppins', sans-serif;
+    --navPadding: 12px;
+    padding: var(--navPadding) 18px;
+    z-index: 3;
+}
+
+.navCenter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo{
+    color: var(--textColour);
+    text-transform: uppercase;
+    letter-spacing: calc(0.3125 * 1rem);
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    margin-right: calc(var(--navPadding)*-1);
+}
+
+.navLinks li{
+    list-style: none;
+    padding: 0 calc(var(--navPadding));
+}
+
+.navLinks a {
+    color: var(--textColour);
+    text-decoration: none;
+    letter-spacing: calc(1rem * 0.1875);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.loggedOutNavOptions a{
+    color: var(--textColour);
+    text-decoration: none;
+    letter-spacing: calc(1rem * 0.1875);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navItem:hover {
+    color: var(--textColourSecondary);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    --lineW: calc(1rem * 1.5625);
+    --lineH: calc(1rem * 0.1875);
+}
+
+.burger div{
+    width: var(--lineW);
+    height: var(--lineH);
+    background-color: var(--textColour);
+    margin: calc(1rem * 0.3125) 0;
+}
+
+@media screen and (max-width: 768px){
+    body {
+        overflow-x: hidden;
+    }
+    .navLinks {
+        display: none;
+    }
+
+    .navOpen{
+        display: flex;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        right: var(--navPadding);
+        background-color: var(--navBckgColor);
+        flex-direction: column;
+        align-items: center;
+        padding: calc(var(--navPadding)/2) 0;
+    }
+    .navOpen li {
+        padding: calc(var(--navPadding)/2) 0;
+    }
+    .burger {
+        display: block;
+    } 
+}
+
+.line1CloseBtn {
+    transform: rotate(-45deg) translate(calc(1rem * -1 * 0.3125), calc(1rem * 0.375));
+}
+
+.line2CloseBtn {
+    opacity: 0;
+}
+
+.line3CloseBtn {
+    transform: rotate(45deg) translate(calc(1rem * -1 * 0.3125), calc(1rem * -1 * 0.375));
+}

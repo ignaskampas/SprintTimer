@@ -1,0 +1,74 @@
+.customDropdown{
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    color: var(--textColour);
+    position: relative;
+    z-index: 2;
+    
+}
+
+.isZeroCategories{
+    display: none;
+}
+
+.dropdownRow {
+    padding: var(--btnPadding);;
+}
+
+.dropdownMenuRow:hover {
+    background-color: var(--rowHoverColour);
+}
+
+.menu{
+    position: absolute;
+    display: block;
+    list-style-type: none;    
+    background-color: var(--btnColour);
+    border-radius: var(--radiusPrimary);
+    overflow: hidden;
+    border-style: solid;
+    border-width: 0.1px;
+}
+
+.isClosed{
+    display: none;
+}
+
+.selectedOptionDisplay{
+    border-radius: var(--radiusPrimary);
+    background-color: var(--btnColour);
+    display: flex;
+}
+
+.selectedOptionDisplay:hover{
+    background-color: var(--rowHoverColour);
+}
+
+.selectedOptionDisplay:hover .input{
+    background-color: var(--rowHoverColour);
+}
+
+.selectedOptionDisplayText{
+    flex: 1
+}
+
+.input{
+    display: inline;
+    background-color: var(--btnColour);
+    color: var(--textColour);
+    font-size: 1rem;
+    border-radius: var(--radiusPrimary);
+    cursor: pointer;
+    border: none;
+}
+
+.arrow{
+    padding-left: 4px;
+}
+
+.selectedMenuRow{
+    background-color: var(--dropdownSelectedItemColour);
+}

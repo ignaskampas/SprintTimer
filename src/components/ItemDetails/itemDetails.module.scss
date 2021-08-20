@@ -1,0 +1,58 @@
+.itemDetails{
+    width: 100%;   
+}
+
+.itemDetailsCenter{
+    max-width: 1000px;
+    margin: 0px auto;
+    color: var(--textColour);
+}
+
+.videoWithSliders{
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.textRow{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+
+.showNoCategoryError{
+    display: block;
+    color: red;
+}
+
+.hideNoCategoryError{
+    display: none;
+}
+
+.categoryInput{
+    border-radius: var(--radiusPrimary);
+    padding: var(--btnPadding);
+}
+
+.categoryDropdown{
+    display: inline-block;
+}
+
+.checkbox{
+    margin-bottom: 12px;
+}
+
+.saveAndDeleteBtns{
+    display: flex;
+    flex-direction: row;   
+}
+
+.deleteBtn{
+    padding-right: 13px;
+}
+
+.categoryLWithDropdown{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}

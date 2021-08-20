@@ -1,0 +1,33 @@
+.importVideoCenter{
+    max-width: var(--pageMaxWidth);
+    margin: 0px auto;
+    --pageTextColor: var(--textColour);
+}
+
+.dropZone {
+    color: var(--pageTextColor);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    width: 9.375rem;
+    height: 9.375rem;
+    border: 2px dashed var(--textColourSecondary);
+    line-height: 9.375rem;
+    text-align: center;
+}
+
+.input{
+    display: none;
+}
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    background-color: var(--btnColour);
+    border-radius: var(--radiusPrimary);
+    padding: var(--btnPadding);
+    color: var(--pageTextColor);
+}
+
+.btn:hover {
+    background-color: var(--btnHoverColour);
+}

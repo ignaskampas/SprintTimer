@@ -1,0 +1,12 @@
+.button{
+    display: inline-block;
+    cursor: pointer;
+    background-color: var(--btnColour);
+    border-radius: var(--radiusPrimary);
+    padding: var(--btnPadding);
+    color: var(--pageTextColor);
+}
+
+.button:hover {
+    background-color: var(--btnHoverColour);
+}
